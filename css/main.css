@@ -222,8 +222,26 @@ body {
 }
 
 .main {
-  background: url(../img/bg.png) no-repeat center top/contain;
   padding-bottom: 100px;
+  position: relative;
+}
+.main:after, .main:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+}
+.main:after {
+  width: 318px;
+  height: 218px;
+  background: url(../img/bg_left.png) no-repeat center center;
+  left: 0px;
+}
+.main:before {
+  width: 316px;
+  height: 205px;
+  background: url(../img/bg_right.png) no-repeat center center;
+  right: 0px;
 }
 
 .container {
