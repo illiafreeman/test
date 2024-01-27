@@ -214,7 +214,6 @@ body {
     }
 }
 .main {
-    //background: url(../img/bg.png) no-repeat center top / contain;
     padding-bottom: 100px;
     position: relative;
     &:after, &:before{
@@ -319,6 +318,8 @@ body {
 
 .prices {
     display: flex;
+    position: relative;
+    z-index: 100;
 }
 .price {
     width: calc(33.333% + 11px);
