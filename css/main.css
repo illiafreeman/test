@@ -2196,15 +2196,22 @@ body {
     text-align: center;
   }
   .price__name {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 28px;
   }
   .price__currency {
     font-size: 20px;
     margin-right: 4px;
   }
+  .price__currency:hover {
+    transform: translateY(-4px);
+  }
   .price__period {
     font-size: 16px;
+  }
+  .price__period:hover {
+    transform: none;
+    opacity: 0.7;
   }
   .price__val {
     font-size: 42px;
