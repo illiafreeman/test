@@ -112,6 +112,10 @@ table td {
   --transition05: all 0.5s ease-in-out;
 }
 
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   display: flex;
   flex-direction: column;
