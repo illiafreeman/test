@@ -23,7 +23,16 @@ if($('.wow').length){
 }
 /*end animation on scroll*/
 
+$('#cost').click(function () {
+    $(this).toggleClass('dol rub');
+    let cost = $(this).html();
+    if($(this).hasClass('dol')){
+        $(this).html(cost/3);
+    }else{
+        $(this).html(cost*3);
+    }
 
+});
 
 
 

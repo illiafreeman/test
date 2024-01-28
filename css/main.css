@@ -425,6 +425,11 @@ body {
   visibility: hidden;
 }
 
+@media only screen and (max-width: 1280px) {
+  .main:before, .main:after {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .header__group {
     gap: 60px;
@@ -434,5 +439,18 @@ body {
   }
   .header__nav {
     gap: 34px;
+  }
+  .header {
+    padding: 20px 0 50px;
+  }
+  h1 {
+    font-size: 34px;
+    margin-bottom: 62px;
+  }
+  .main {
+    padding-bottom: 50px;
+  }
+  .price {
+    padding: 45px 38px 40px;
   }
 }/*# sourceMappingURL=main.css.map */
