@@ -476,7 +476,7 @@ body {
     display: flex;
     top: 100px;
     bottom: 0;
-    right: 16px;
+    right: 30px;
     width: 100px;
     z-index: 200;
     transition: var(--transition);
