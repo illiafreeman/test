@@ -71,9 +71,10 @@
         display: flex;
     }
 
-    .btn {
-        height: 30px;
+    .btn, .header .btn {
+        height: 38px;
         padding: 0 16px;
+        font-weight: 500;
     }
 
     .main {
@@ -152,4 +153,11 @@
         -webkit-animation-delay: .3s !important;
         animation-delay: .3s !important;
     }
+    body, .price__feature-name, .price__list li {
+        font-size: 14px;
+    }
+    .price__feature{
+        font-size: 16px;
+    }
+ 
 }
