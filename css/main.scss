@@ -311,8 +311,6 @@ body {
     &__nav {
         display: flex;
         gap: 48px;
-        
-        
     }
     &__menu-btn {
         display: none;
@@ -324,9 +322,6 @@ body {
     }
 }
 .open-menu{
-    .main{
-        //opacity: 0;
-    }
     .header__nav-wrap{
         
         opacity: 1;
@@ -453,49 +448,9 @@ body {
 }
 .marked {
 }
-
-
-
-
-
 .wow {
     visibility: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @import '_animate';
 @import '_query';
