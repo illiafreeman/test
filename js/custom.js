@@ -33,7 +33,16 @@ $('#cost').click(function () {
     }
 
 });
+$('#per').click(function () {
+    $(this).toggleClass('mon day');
+    let cost = $('#cost').html();
+    if($(this).hasClass('mon')){
+        $('#cost').html(cost*30);
+    }else{
+        $('#cost').html(cost/30);
+    }
 
+});
 
 
 
