@@ -280,6 +280,7 @@ body {
   font-weight: 600;
   opacity: 1;
   cursor: default;
+  pointer-events: none;
 }
 .header__group li a.active:before {
   display: none;
@@ -339,7 +340,7 @@ body {
   box-shadow: 0px 4px 95px 0px rgba(0, 0, 0, 0.25);
   background: #6a994e;
   border-radius: 11px;
-  padding: 45px 60px 40px;
+  padding: 45px 60px 28px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -350,6 +351,7 @@ body {
   transform: translateY(-34px);
   margin: 0 -16px;
   z-index: 10;
+  padding-bottom: 38px;
 }
 .price:nth-child(2) .price__desc:after {
   display: none;
@@ -2178,7 +2180,7 @@ body {
   }
   .price {
     width: 100%;
-    padding: 34px 38px 40px;
+    padding: 34px 38px 38px;
   }
   .price:nth-child(2) {
     transform: translateY(0);
