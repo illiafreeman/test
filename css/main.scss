@@ -378,7 +378,12 @@ body {
         font-weight: 500;
         font-size: 11px;
         line-height: 128%;
+        align-self: flex-start;
         cursor: pointer;
+        transition: var(--transition);
+        &:hover{
+            transform: scale(1.5) translateY(-2px);
+        }
     }
     &__val {
         font-weight: 800;
@@ -390,8 +395,13 @@ body {
         align-self: flex-end;
         opacity: .7;
         cursor: pointer;
+        transition: var(--transition);
         &:before{
             content: '/ ';
+        }
+        &:hover{
+            transform: scale(1.1);
+            opacity: 1;
         }
     }
     &__desc {
