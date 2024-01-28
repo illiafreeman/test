@@ -159,7 +159,7 @@ body {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: var(--orange);
+    background: #fff;
     border-radius: 1px;
     opacity: 1;
     left: 0;
@@ -216,6 +216,7 @@ body {
 .main {
     padding-bottom: 100px;
     position: relative;
+    transition: var(--transition);
     &:after, &:before{
         content: '';
         display: block;
@@ -304,7 +305,9 @@ body {
     }
     &__logo {
     }
-    &__nav-wrap {}
+    &__nav-wrap {
+        
+    }
     &__nav {
         display: flex;
         gap: 48px;
@@ -313,6 +316,23 @@ body {
     }
     &__menu-btn {
         display: none;
+        width: 34px;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+.open-menu{
+    .main{
+        //opacity: 0;
+    }
+    .header__nav-wrap{
+        
+        opacity: 1;
+        visibility: visible;
+        
     }
 }
 

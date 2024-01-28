@@ -37,8 +37,6 @@ $('[data-cur="cur"]').click(function () {
             $(this).html(Math.round(cost*90));
         }
     });
-    
-
 });
 $('[data-per="per"]').click(function () {
     $('[data-per="per"]').each(function (index, value){
@@ -52,8 +50,6 @@ $('[data-per="per"]').click(function () {
             $(this).siblings('[data-cost="cost"]').html(Math.round(cost/30));
         }
     });
-    
-
 });
 
 
