@@ -2121,9 +2121,6 @@ body {
     left: -38px;
     right: -38px;
   }
-  .wow {
-    visibility: visible;
-  }
 }
 @media only screen and (max-width: 768px) {
   .header__nav-wrap {
