@@ -1,28 +1,18 @@
-/*mobile header btns*/
+/*mobile menu*/
 $('.header__menu-btn').click(function () {
     $('.header__nav-wrap').toggleClass('vis');
     $('body').toggleClass('oh open-menu');
     $('.hamburger').toggleClass('open');
-    $('.header__tel').removeClass('vis');
 });
-$('.header__nav > .parent > button').click(function () {
-    $(this).parent().hasClass('vis') ? $(this).parent().removeClass('vis') : $(this).parent().addClass('vis');
-    $(this).parent().find('.parent').removeClass('vis');
-});
-$('.header__nav .parent ul li.parent button').click(function () {
-    $(this).parent().hasClass('vis') ? $(this).parent().removeClass('vis') : $(this).parent().addClass('vis');
-});
-$('.header__tel-btn').click(function () {
-    $('.header__tel').toggleClass('vis');
-});
-/*end mobile header btns*/
+/*end mobile menu*/
 
-/*animation on scroll*/
+/*animation*/
 if($('.wow').length){
     new WOW().init();
 }
-/*end animation on scroll*/
+/*end animation*/
 
+/*currency toggle*/
 $('[data-cur="cur"]').click(function () {
     $('[data-cur="cur"]').toggleClass('dol rub');
     $('[data-cur="cur"]').each(function (index, value){
@@ -38,6 +28,9 @@ $('[data-cur="cur"]').click(function () {
         }
     });
 });
+/*end currency toggle*/
+
+/*period toggle*/
 $('[data-per="per"]').click(function () {
     $('[data-per="per"]').each(function (index, value){
         $(this).toggleClass('mon day');
@@ -51,7 +44,7 @@ $('[data-per="per"]').click(function () {
         }
     });
 });
-
+/*end period toggle*/
 
 
 
