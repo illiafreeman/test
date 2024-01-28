@@ -2197,4 +2197,7 @@ body {
   .price__list {
     margin-bottom: 38px;
   }
+  .wow.animate__animated {
+    animation-delay: 0.3s !important;
+  }
 }/*# sourceMappingURL=main.css.map */

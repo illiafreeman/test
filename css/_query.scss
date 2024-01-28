@@ -141,5 +141,8 @@
     .price__list {
         margin-bottom: 38px;
     }
-
+    .wow.animate__animated{
+        -webkit-animation-delay: .3s !important;
+        animation-delay: .3s !important;
+    }
 }
