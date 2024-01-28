@@ -358,6 +358,7 @@ body {
         font-weight: 500;
         font-size: 11px;
         line-height: 128%;
+        cursor: pointer;
     }
     &__val {
         font-weight: 800;
@@ -368,6 +369,7 @@ body {
     &__period {
         align-self: flex-end;
         opacity: .7;
+        cursor: pointer;
         &:before{
             content: '/ ';
         }
