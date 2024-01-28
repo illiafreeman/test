@@ -2120,7 +2120,7 @@ body {
     padding-bottom: 50px;
   }
   .price {
-    padding: 45px 38px 40px;
+    padding: 45px 38px 28px;
   }
   .price__desc::after {
     left: -38px;
