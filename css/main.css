@@ -308,6 +308,7 @@ body {
 }
 .header__group li a.btn {
   opacity: 1;
+  font-weight: 500;
 }
 .header__group li a.btn:before {
   display: none;
