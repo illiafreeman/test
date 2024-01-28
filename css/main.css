@@ -2218,6 +2218,9 @@ body {
   body, .price__feature-name, .price__list li {
     font-size: 14px;
   }
+  .price__list li {
+    background-position: left 6px;
+  }
   .price__feature {
     font-size: 16px;
   }
