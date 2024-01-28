@@ -7,7 +7,7 @@ $('.header__menu-btn').click(function () {
 /*end mobile menu*/
 
 /*animation*/
-if($('.wow').length){
+if($(window).width() > 1024){
     new WOW().init();
 }
 /*end animation*/
