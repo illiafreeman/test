@@ -25,7 +25,6 @@ if($('.wow').length){
 
 $('[data-cur="cur"]').click(function () {
     $('[data-cur="cur"]').toggleClass('dol rub');
-    //$(this).hasClass('dol') ? ($(this).html('$')) : ($(this).html('₽'));
     $('[data-cur="cur"]').each(function (index, value){
         $(this).hasClass('dol') ? ($(this).html('$')) : ($(this).html('₽'));
     });
