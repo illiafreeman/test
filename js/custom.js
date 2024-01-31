@@ -21,8 +21,26 @@ $('[data-cur="cur"]').click(function () {
         let cost = $(this).html();
         if($(this).hasClass('dol')){
             $(this).html(Math.round(cost/90));
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 500,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
         }else{
             $(this).html(Math.round(cost*90));
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 500,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
         }
     });
 });
@@ -30,18 +48,39 @@ $('[data-cur="cur"]').click(function () {
 
 /*period toggle*/
 $('[data-per="per"]').click(function () {
+    $('[data-per="per"]').toggleClass('mon day');
     $('[data-per="per"]').each(function (index, value){
+        $(this).hasClass('mon') ? ($(this).html('month')) : ($(this).html('day'));
+    });
+    $('[data-cost="cost"]').each(function (index, value){
         $(this).toggleClass('mon day');
-        let cost = $(this).siblings('[data-cost="cost"]').html();
+        let cost = $(this).html();
         if($(this).hasClass('mon')){
-            $(this).html('month');
-            $(this).siblings('[data-cost="cost"]').html(Math.round(cost*30));
+            $(this).html(Math.round(cost/30));
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 500,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
         }else{
-            $(this).html('day');
-            $(this).siblings('[data-cost="cost"]').html(Math.round(cost/30));
+            $(this).html(Math.round(cost*30));
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 500,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
         }
     });
 });
+
 /*end period toggle*/
 
 
